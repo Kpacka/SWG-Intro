@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Contact Us</title>
+		</head>
+
+		<body>
+			<table cellspacing="10">
+				<tr height="30">
+					<td align="right">First Name:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<input type="text" name="firstname" style="width:200px; height:15px;"/>
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right">Last Name:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<input type="text" name="lastname" style="width:200px; height:15px;"/>
+						</form>
+					</td>
+				<tr height="30">
+					<td align="right">Email:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<input type="text" name="email" style="width:200px; height:15px;"/>
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right">Type of License:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<input type="radio" name="answer" value="Buisness" checked/>Buisness     <input type="radio" name="answer" value="Personal"/>Personal
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right">Reason:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<select name="Options" style="width:200px; height:15px;">
+								<option value="Select a Reason">Select a Reason</option>
+								<option value="Software Support">Software Support</option>
+								<option value="Hardware Support">Hardware Support</option>
+								<option value="Information Request">Information Request</option>
+							</select>
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right">Additional Information:</td>
+					<td>
+						<form action="funforms.html" method="POST">
+							<textarea name="Additional Information" style="width:200px; height:100px;"></textarea>
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right"></td>
+					<td>
+						<form action="funforms.html" type="POST">
+							<input type="checkbox" name="iUnderstand" value="yes"/><small>I have read the terms of service.</small>
+						</form>
+					</td>
+				</tr>
+				<tr height="30">
+					<td align="right"></td>
+					<td align="right">
+						<form action="funforms.html" method="POST">
+							<input type="submit" value="Send Request" style="font-size:larger;background-color:grey;"/>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</body>
+	</html>
