@@ -2,24 +2,39 @@
 	<html>
 		<head>
 			<title>Contact Us</title>
+			<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+			<style type="text/css">
+
+			.contact td{
+				border-spacing: 10px;
+			}
+			.contact td:first-child {
+    		text-align: right;}
+
+    		table.links {border-spacing: 10px}
+  
+			</style>
+
 		</head>
 
 		<body>
-			<h1><center>Packard's Bistro</center></h1>
+			<div class="headfoot">
+				<h1>Packard's Bistro</h1>
+			</div>
 			<hr>
 
-			<table cellspacing="10" cellpadding="10">
+			<table class="links">
 				<tr>
-					<td><a href="homepage.html">Home</a></td>
-					<td><a href="Menu.html">Menu</a></td>
-					<td><a href="ContactUs.html">Contact Us</a></td>
+					<td><a href="homepageV2.html">Home</a></td>
+					<td><a href="MenuV2.html">Menu</a></td>
+					<td><a href="ContactUsV2.html">Contact Us</a></td>
 				</tr>
 			</table>
 			<hr>
 
-			<table cellspacing="0" cellpadding="10">
+			<table class="contact">
 				<tr>
-					<td align="right">Name:</td>
+					<td>Name:</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<Input type="text" name="Name" style="width:;height:;"/>
@@ -27,7 +42,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right">Email:</td>
+					<td>Email:</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<input type="text" name="Email" style="width:;height:;"/>
@@ -35,7 +50,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right">Phone:</td>
+					<td>Phone:</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<input type="text" name="Phone" style="width:;height:;"/>
@@ -43,7 +58,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right">Reason for Inquiry:</td>
+					<td>Reason for Inquiry:</td>
 					<td>
 						<form action="concactus.html" method="POST">
 							<select name="Options" style="width:200px; height:15px;">
@@ -56,7 +71,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right" valign="top">Additional Information</td>
+					<td valign="top">Additional Information</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<textarea name="Additional Information" style="width:200px; height:100px;"></textarea>
@@ -64,7 +79,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right">Have you been to the restaurant?</td>
+					<td>Have you been to the restaurant?</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<input type="radio" name="answer" value="yes"/>No<input type="radio" name="answer" value="Personal"/>Yes
@@ -73,7 +88,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td align="right">Best days to contact you:</td>
+					<td>Best days to contact you:</td>
 					<td>
 						<form action="contactus.html" method="POST">
 							<input type="checkbox" name="dayofweek" value="monday"/>M<input type="checkbox" name="dayofweek" value="tuesday"/>T<input type="checkbox" name="dayofweek" value="wednesday"/>W<input type="checkbox" name="dayofweek" value="thursday"/>Th<input type="checkbox" name="dayofweek" value="Friday"/>F
@@ -82,8 +97,10 @@
 				</tr>
 			</table>
 			<hr>
-			<center>200 Bistro Way, Minneapolis, MN, 55304</center>
+			<div class="headfoot">
+			<p>200 Bistro Way, Minneapolis, MN, 55304<br>
 			<br>
-			<center>612-555-5555</center>
+			612-555-5555</p>
+			</div>
 		</body>
 	</html>
